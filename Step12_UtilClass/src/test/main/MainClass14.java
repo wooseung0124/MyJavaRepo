@@ -2,6 +2,7 @@ package test.main;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -25,5 +26,10 @@ public class MainClass14 {
 		
 		//중복제거된 Set을 이용해서 ArrayList 객체 새로 생성하기
 		List<Integer> result = new ArrayList<>(set);
+		
+		//오름차순 정렬
+		Collections.sort(result);
+		//내림차순 정렬
+		//Collections.sort(result, Collections.reverseOrder());
 	}
 }
