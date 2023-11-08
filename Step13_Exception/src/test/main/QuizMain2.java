@@ -18,26 +18,27 @@ package test.main;
  */
 public class QuizMain2 {
 	public static void main(String[] args) {
-		int secTime = 0;
+		int secTime = 1;
 		int minuteTime = 0;
 		
-		while(true){
+		while(true){// 시간이 계속 진행되어야 하기 때문에 무한 루프가 필요함
 			
 			try {
 				
-				Thread.sleep(1000);//1000=1초
-				secTime+=1;
+				Thread.sleep(1000);//1000=1초, 그냥 작성하면 런타임 인셉션 선언을 안해서 오류가 남, 예외처리하기(try-catch)
 				System.out.println(minuteTime+"분"+secTime+"초");
-				
-				if(secTime==59) {
-					secTime = 0;
-					minuteTime+=1;
-				}
+
 				
 			}catch(Exception e){
 				System.out.println("예외가 발생했습니다.");
 				System.out.println("예외 메시지: "+e.getMessage());
 			}
+			secTime++;
+			if(secTime==60) {
+				secTime = 0;
+				minuteTime+=1;
+			}
+			
 		}
 	
 	}
