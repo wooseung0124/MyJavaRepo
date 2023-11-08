@@ -30,14 +30,14 @@ public class MainClass15 {
 //			}
 //		}
 		
-		boolean isRun=true;
-		while(isRun) {
-			int ranNum=ran.nextInt();
-			System.out.println(ranNum);
-			if(ranNum==50) {
-				isRun=false;
-			}
-		}
+//		boolean isRun=true;
+//		while(isRun) {
+//			int ranNum=.nextInt();
+//			System.out.println(ranNum);
+//			if(ranNum==50) {
+//				isRun=false;
+//			}
+//		}
 		
 	}
 }
