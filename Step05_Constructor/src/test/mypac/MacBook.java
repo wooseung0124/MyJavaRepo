@@ -13,4 +13,5 @@ public class MacBook {
 		this.memory=memory;
 		this.hardDisk=hardDisk;
 	}
+	
 }
